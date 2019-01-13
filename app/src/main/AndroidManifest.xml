@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.xlog.blackboxmobile">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:name=".Network.Socket.ChatApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyApp"
+        android:usesCleartextTraffic="true"
+        android:noHistory="true">
+        <activity
+            android:name=".TypeAccount.UserType"
+            android:screenOrientation="portrait"
+            android:supportsRtl="true"
+            android:theme="@style/Theme.MyApp"
+            android:launchMode="singleTop"
+           >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Email.Email"
+            android:theme="@style/Theme.MyApp" />
+        <activity
+            android:name=".Chat.ChatActivity"
+            android:label="@string/title_activity_chat" />
+        <!-- new design implemented just incase we need to go back for tabbed design_ -->
+        <!-- <activity android:name=".Dashboard.Dashboard" /> -->
+        <!--  -->
+        <activity android:name=".Sms.SendSms" />
+        <activity android:name=".Dashboard.MainDashboard.MainDashboard"/>
+        <activity android:name=".Login.MainActivity" />
+    </application>
+
+</manifest>

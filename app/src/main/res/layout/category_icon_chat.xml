@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteY="25dp">
+
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:id="@+id/imageCircleViewHeadLogs"
+        android:layout_width="70dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="12dp"
+        android:adjustViewBounds="false"
+        android:src="@mipmap/ic_launcher_round"
+        app:civ_border_color="#06A1DF"
+        app:civ_border_width="1dp"
+        app:civ_shadow_color="#000"
+        app:civ_shadow_gravity="center"
+        app:layout_constraintBottom_toTopOf="@+id/accountType"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/accountType"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="12dp"
+        android:fontFamily="@font/sourcesanspro_regular"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageCircleViewHeadLogs" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

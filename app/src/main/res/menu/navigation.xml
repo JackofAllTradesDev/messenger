@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/smallTalk"
+        android:icon="@drawable/small_talk_icon"
+        android:title="Small Talk" />
+
+    <item
+        android:id="@+id/all_title"
+        android:icon="@drawable/all_icon_chat"
+        android:title="All" />
+
+    <item
+        android:id="@+id/origin_title"
+        android:icon="@drawable/origin_icon"
+        android:title="Origin" />
+
+    <item
+        android:id="@+id/destination_title"
+        android:icon="@drawable/destination_icon"
+        android:title="Destination" />
+
+
+</menu>
